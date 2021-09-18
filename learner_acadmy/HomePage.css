@@ -1,0 +1,81 @@
+@charset "windows-1256";
+
+html, body {
+background-color:#78A9AB; margin: 0;
+display: flex;
+justify-content: center; flex-direction: column; align-items: center; min-height: 100vh;
+font-family: "Roboto Mono", monospace;
+
+}
+
+
+back{
+
+}
+
+
+background: #78A9AB;
+
+
+button { margin: 50px;
+font-family: inherit;
+}
+/* End of Page styling */
+
+/* Simple button styling -- No animation */
+
+.fi {
+font-size: 20px; font-weight: 200; letter-spacing: 1px;
+padding: 13px 50px 13px; outline: 0;
+border: 1px solid black; cursor: pointer; position: relative;
+background-color: #dcbaff;
+}
+
+.fi::after {
+content: "";
+background-color: white; width: 100%;
+z-index: -1; position: absolute; height: 100%;
+top: 7px; left: 7px;
+transition: 0.2s;
+}
+
+.fi:hover::after { top: 0px;
+left: 0px;
+}
+
+
+/* Fill button styling */
+.fill {
+font-size: 20px; font-weight: 200; letter-spacing: 1px;
+padding: 13px 50px 13px; outline: 0;
+ border: 1px solid black; cursor: pointer; position: relative; background-color: #ffe54c;
+}
+
+.fill::after {
+content: "";
+background-color: #ffe54c; width: 100%;
+z-index: -1; position: absolute; height: 100%;
+top: 7px; left: 7px;
+transition: 0.2s;
+}
+
+.fill:hover::after { top: 0px;
+left: 0px;
+}
+/* End of Fill Button */
+.filles {
+font-size: 20px; font-weight: 200; letter-spacing: 1px;
+padding: 13px 50px 13px; outline: 0;
+border: 1px solid black; cursor: pointer; position: relative; background-color: #66f2d5;
+}
+
+.filles::after { content: "";
+background-color: #66f2d5; width: 100%;
+z-index: -1; position: absolute; height: 100%;
+top: 7px; left: 7px;
+transition: 0.2s;
+}
+
+.filles:hover::after { top: 0px;
+left: 0px;
+}
